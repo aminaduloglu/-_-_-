@@ -1,0 +1,19 @@
+//Отметьте функции, которые на Ваш взгляд, относятся к системному интерфейсу доступа к файлам в Linux
+
+int sscanf(const char *str, const char *format, ...) 
+
+ssize_t write(int fd, const void *buf, size_t count)
+
+HANDLE CreateFile(LPCTSTR name, DWORD Access, DWORD mode);
+
+int open(const char *pathname, int flags, mode_t mode)
+
+BOOL WriteFile(HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite)
+
+
+Из предложенного списка функций к системному интерфейсу доступа к файлам в Linux относятся следующие функции:
+ssize_t write(int fd, const void *buf, size_t count): Функция write используется для записи данных в файл, идентифицированный дескриптором файла (fd). Она является системным вызовом в Linux 
+int open(const char *pathname, int flags, mode_t mode): Функция open используется для открытия файла или устройства, указанного в pathname. Она является системным вызовом в Linux 
+
+Функции HANDLE CreateFile(LPCTSTR name, DWORD Access, DWORD mode) и BOOL WriteFile(HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite) относятся к системному интерфейсу доступа к файлам в операционной системе Windows, а не Linux.
+Функция int sscanf(const char *str, const char *format, ...) не относится к системному интерфейсу доступа к файлам. Это функция стандартной библиотеки C для разбора строки на основании формата.
